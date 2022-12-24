@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./Assets/Logo.png">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Assets/Logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Tripy</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar bg-base-100 container mx-auto md:p-5 lg:p-0">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Services</a></li>
+                <li><a>Price</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="" href="/"><img src="./Assets/Logo.png" alt="" /></a>
+          </div>
+          <div class="navbar-center hidden md:-ml-20 lg:ml-0 md:flex">
+            <ul class="flex md:gap-5 lg:gap-10 px-1 font-semibold text-xl">
+              <li><a class="hover:border-b-2 border-b-pink-600 hover:text-2xl ease-in duration-150">Home</a></li>
+              <li><a class="hover:border-b-2 border-b-pink-600 hover:text-2xl ease-in duration-150">About</a></li>
+              <li><a class="hover:border-b-2 border-b-pink-600 hover:text-2xl ease-in duration-150">Services</a></li>
+              <li><a class="hover:border-b-2 border-b-pink-600 hover:text-2xl ease-in duration-150">Price</a></li>
+              <li><a class="hover:border-b-2 border-b-pink-600 hover:text-2xl ease-in duration-150">Contact</a></li>
+                
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-5">
+            <a href="/" class="font-semibold text-xl">Login</a>
+            <a class="btn rounded-3xl bg-pink-600 border-none">Get started</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
